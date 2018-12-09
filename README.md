@@ -22,3 +22,6 @@ insert into employees values (nextval('employees_id_seq'::regclass),'first1', 'l
 insert into employees values (nextval('employees_id_seq'::regclass),'first2', 'last2','email@email2');
 insert into employees values (nextval('employees_id_seq'::regclass),'first3', 'last3','email@email3');
 ```
+##### Teste
+
+- http://localhost:8080/api/v1/employees
