@@ -17,3 +17,8 @@ Meu aprendizado fazendo CRUD usando spring_boot e postgres
   last_name varchar,
   email_address varchar);
 ```
+```
+insert into employees values (nextval('employees_id_seq'::regclass),'first1', 'last1','email@email1');
+insert into employees values (nextval('employees_id_seq'::regclass),'first2', 'last2','email@email2');
+insert into employees values (nextval('employees_id_seq'::regclass),'first3', 'last3','email@email3');
+```
