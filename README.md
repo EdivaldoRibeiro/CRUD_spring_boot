@@ -10,6 +10,10 @@ Meu aprendizado fazendo CRUD usando spring_boot e postgres
 - create database edidb1;
 - create user edi with encrypted password 'edi';
 - grant all privileges on database edidb1 to edi;
+- \connect edidb1
+```
+dbeaver para acesso gráfico do postgres.
+```
 ```
   create table employees (
   id serial,
@@ -22,6 +26,8 @@ insert into employees values (nextval('employees_id_seq'::regclass),'first1', 'l
 insert into employees values (nextval('employees_id_seq'::regclass),'first2', 'last2','email@email2');
 insert into employees values (nextval('employees_id_seq'::regclass),'first3', 'last3','email@email3');
 ```
+- disconnect edidb1
+
 ##### Teste
 
 - http://localhost:8080/api/v1/employees
